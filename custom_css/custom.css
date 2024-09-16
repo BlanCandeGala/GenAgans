@@ -1,0 +1,259 @@
+/* Para eliminar el header, el footer y el summary del HTML1 y 2 y así ahorrar espacio en pantalla para que se vean bien los gráficos */
+div.summary{
+    display: none;
+    width: 0 !important;
+}
+div.footer{
+    display: none;
+}
+div.header {
+    display: none !important;
+}
+/*Hacer que los resultados ocupen toda la pantalla (HTML1 y 2)*/
+div.main{
+    width: 100% !important;
+    height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+/*Para ajustar el tamaño de las gráficas (HTML1 y 2)*/
+img.indented{
+    height: 75vh;
+    transform: translate(-50%);
+    margin-left: 50% !important;
+}
+/*Para ajustar el tamaño de la tabla del principio (HTML 1 y 2)*/
+table{
+    height: 75vh;
+    width: 75vw;
+    transform: translate(-50%);
+    margin-left: 50% !important;
+}
+/*Ajustar posición botón modo noche*/
+bslib-input-dark-mode {
+    position: fixed !important;
+    top: 17px !important;
+    right: 20px !important;
+}
+/* Ajustar espacio para el título*/
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0.5rem !important;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin-top: calc(1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+/* Ajustar posición y color del título*/
+h2 {
+    margin-top: 0.6rem;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgb(230, 80, 20);
+    /*color: var(--bs-heading-color);*/
+}
+/* Tamaño del texto y color de output de todas las cajas*/
+.bslib-value-box .value-box-value {
+    font-size: calc(0.8rem + .9vw) !important;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #F6490D;     /*#F6490D*/
+    /*align-items: flex-start; Si se activa el nombre de los outputs se puede salir de la caja*/
+}
+/*Sombra blanca para el modo noche*/
+[data-bs-theme="dark"] {
+    --bslib-box-shadow-color-rgb: 255,255,255
+}
+/*Sombra negra para el modo día*/
+[data-bs-theme="light"] {
+    --bslib-box-shadow-color-rgb: 0,0,0
+}
+/* Estos 3 sirven para poner en negrita los subtítulos y los paneles de cehck */
+.shiny-input-container .control-label {
+    margin-bottom: .5rem;
+    font-weight: normal;
+}
+.bslib-card .card-body {
+    font-weight: bold;
+}
+.bslib-value-box .value-box-title {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+/* Los siguientes 4 son para que se vea bien el html del apartado 2*/
+div#container{
+    position: absolute;
+    display: block;
+    overflow: auto;
+    left: 0;
+    background: white;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.section_div{
+    padding-top: 1rem; 
+    padding-bottom: 1rem; 
+}
+.shiny-html-output .figure {
+    height: 75vh;
+    transform: translate(-50%);
+    margin-left: 50%;
+}
+.shiny-html-output .figure, .shiny-html-output table {
+    transform: translate(-50%);
+    margin-left: 50%;
+}
+/* Para que se vea bien el html 5, ajusta las imagenes a la izquierda, su visualización a la derecha y su tamaño */
+table.imgs {
+    border-collapse: collapse;
+    margin-left: 0 !important;
+    position: relative;
+    transform: none;
+    width: 50%;
+    height: 100%;
+}
+.thumbnail > img{
+    width: 100%;
+    object-fit: contain;
+    padding: 0 !Important;
+}
+.thumbnail:hover span {
+    visibility: visible;
+    right: 0;
+    top: 10px;
+    width: 100%;
+    transform: translate(100%);
+    left: 0 !important;
+}
+.thumbnail:hover span img{
+    width: 100%;
+    object-fit: contain
+}
+.html_content{
+    position: absolute;
+    display: block;
+    overflow: auto;
+    left: 0;
+    background: white;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.dataframe{
+    position: absolute;
+    display: block;
+    overflow: auto;
+    left: 0;
+    background: white;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+}
+
+/* Ajustar estilos de fuente de bloques tipo disclaimer */
+#Disclaimer, #Opcional, #texto_introduccion, #texto_resumen, #Opcional_limpieza {
+    color: black;
+    font-size: 1.05rem !important;
+    line-height: 1.4rem;
+    font-weight: 400;
+    display: flex;
+}
+/* Ajustar espacio entre iconos y texto en la cajas tipo disclaimer*/
+.value-box-grid.html-fill-item:has(#Disclaimer), .value-box-grid.html-fill-item:has(#texto_introduccion), 
+.value-box-grid.html-fill-item:has(#texto_resumen) {
+    grid-template-columns: 15% auto;
+}
+
+/* Ajustar tamaño de ventana de texto de duplicados */
+.bslib-card.txt_llamada_variantes.html-fill-container, 
+.bslib-card.txt_duplicados.html-fill-container {
+    max-height: 25vh;
+}
+.txt_duplicados .value-box-area.html-fill-item.html-fill-container,
+.txt_llamada_variantes .value-box-area.html-fill-item.html-fill-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.txt_duplicados.bslib-value-box[data-full-screen="true"] .value-box-showcase,
+.txt_llamada_variantes.bslib-value-box[data-full-screen="true"] .value-box-showcase{
+    padding: 5rem;
+}
+.txt_duplicados.bslib-value-box .value-box-value, 
+.txt_llamada_variantes.bslib-value-box .value-box-value {
+    overflow-y: auto;
+    /*align-items: flex-start; Si se activa el nombre de los outputs se puede salir de la caja*/
+}
+.txt_duplicados.bslib-value-box.showcase-left-center[data-full-screen="true"]  .value-box-grid,
+.txt_llamada_variantes.bslib-value-box.showcase-left-center[data-full-screen="true"]  .value-box-grid{
+    grid-template-columns: 15% auto;
+}
+/* Colores */
+/* Color de los iconos */
+.bslib-value-box.default .value-box-showcase>svg.fa {
+    fill: #21b5bd !important; /*#143F6B  #000249*/
+}
+/* Color de los checks */
+.form-check-input:checked, .shiny-input-container .checkbox input:checked, .shiny-input-container .checkbox-inline input:checked, .shiny-input-container .radio input:checked, .shiny-input-container .radio-inline input:checked {
+    background-color: #143F6B; /*#F55353   #1DCED8*/
+    border-color: #143F6B;     /*#F55353   #1DCED8*/
+}
+.form-check-input:focus, .shiny-input-container .checkbox input:focus, .shiny-input-container .checkbox-inline input:focus, .shiny-input-container .radio input:focus, .shiny-input-container .radio-inline input:focus {
+    box-shadow: 0 0 0 .25rem #143F6BAA;  /*#F55353AA    #1DCED8AA*/
+}
+/* Color del texto y el resaltado de las pestañas al seleccionarlas */
+.nav-pills .nav-link.active, .nav-pills .nav-tabs>li>a.active, .nav-pills>li>a.active, .nav-pills :where(ul.nav.navbar-nav > li)>a.active, .nav-pills .show>.nav-link, .nav-pills .in>.nav-link, .nav-pills .nav-tabs>li.show>a, .nav-pills .nav-tabs>li.in>a, .nav-pills>li.show>a, .nav-pills>li.in>a, .nav-pills .show:where(ul.nav.navbar-nav > li)>a, .nav-pills .in:where(ul.nav.navbar-nav > li)>a {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #21b5bd;   /*#F55353    #1DCED8*/
+}
+/* Color de las letras de las pestañas */
+.nav-link, .nav-tabs>li>a, .nav-pills>li>a, :where(ul.nav.navbar-nav > li)>a {
+    color: #143F6B;       /*#143F6B    #000249*/
+}
+/* Color de las letras de las pestañas al pasar el ratón por encima */
+.nav-link:hover, .nav-tabs>li>a:hover, .nav-pills>li>a:hover, :where(ul.nav.navbar-nav > li)>a:hover, .nav-link:focus, .nav-tabs>li>a:focus, .nav-pills>li>a:focus, :where(ul.nav.navbar-nav > li)>a:focus {
+    color: #143F6BCC;      /*#143F6B    #000249CC*/
+}
+/* Color de los botones al pasar el ratón por encima */
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #143F6B;     /*#F55353   #1DCED8*/
+    border-color: #143F6B;         /*#F55353    #1DCED8*/
+}
+/* Color de la barra de progreso */
+.progress-bar {
+    background-color: #143F6B;    /*#F55353    #1DCED8*/
+}
+/* Ajustar espacio entre iconos y texto en la cajas de comandos y resultados*/
+.bslib-value-box.showcase-left-center .value-box-grid {
+    grid-template-columns: 25% auto;
+}
+/* Color del texto del título y negrita*/
+.container-fluid > h2{
+    color: #F6490D;           /*#143F6B    #F6490D*/
+    font-weight: 500;
+}
+/* Forzar que las tablas del apartado 5 se vean bien después de ejecutar el comando 9 */
+table.imgs td:nth-child(2){
+    width: auto !important;
+}
+/* Hacer que el texto de los desplegables del resumen salgan en negrita */
+.accordion-title {
+    font-weight: bold;
+}

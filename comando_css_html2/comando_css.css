@@ -1,0 +1,22 @@
+td {border:1px solid #dddddd;padding:5px;font-size:12px;}
+table {border:1px solid #999999;padding:2x;border-collapse:collapse; width:800px}
+.col1 {width:240px; font-weight:bold;}
+.adapter_col {width:500px; font-size:10px;}
+img {padding:30px;}
+#menu {font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace;}
+#menu a {color:#0366d6; font-size:18px;font-weight:600;line-height:28px;text-decoration:none;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'}
+a:visited {color: #999999}
+.alignleft {text-align:left;}
+.alignright {text-align:right;}
+.figure {width:800px;height:600px;}
+.header {color:#ffffff;padding:1px;height:20px;background:#000000;}
+.section_title {color:#ffffff;font-size:20px;padding:5px;text-align:left;background:#663355; margin-top:10px;}
+.subsection_title {font-size:16px;padding:5px;margin-top:10px;text-align:left;color:#663355}
+#container {text-align:center;padding:3px 3px 3px 10px;font-family:Arail,'Liberation Mono', Menlo, Courier, monospace;}
+.menu_item {text-align:left;padding-top:5px;font-size:18px;}
+.highlight {text-align:left;padding-top:30px;padding-bottom:30px;font-size:20px;line-height:35px;}
+#helper {text-align:left;border:1px dotted #fafafa;color:#777777;font-size:12px;}
+#footer {text-align:left;padding:15px;color:#ffffff;font-size:10px;background:#663355;font-family:Arail,'Liberation Mono', Menlo, Courier, monospace;}
+.kmer_table {text-align:center;font-size:8px;padding:2px;}
+.kmer_table td{text-align:center;font-size:8px;padding:0px;color:#ffffff}
+.sub_section_tips {color:#999999;font-size:10px;padding-left:5px;padding-bottom:3px;}
