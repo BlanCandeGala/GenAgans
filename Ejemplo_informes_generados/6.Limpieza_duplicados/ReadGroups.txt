@@ -1,1 +1,0 @@
-@RG	ID:default	LB:lib1	PL:ILLUMINA	SM:sample1	PU:unit1
