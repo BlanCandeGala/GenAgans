@@ -3,7 +3,7 @@ GenAgans es una aplicación que le permitirá realizar el flujo de trabajo de an
 
 GenAgans ha sido probado en Ubuntu-22.04 y Conda 23.9.0.
 
-Si encontrase algún problema para ejecutarlo, reportelo, por favor.
+Si encontrase algún problema para ejecutarlo, repórtelo, por favor.
 
 ## Intrucciones para ejecutar GenAgans
 1. Abrir la terminal de Linux
