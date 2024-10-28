@@ -1,0 +1,5 @@
+Para realizar la prueba rápida de GenAgans puede seleccionar cualquier opción.
+
+Sin embargo, para que la ejecución de VEP no sea excesivamente larga por la cantidad de variantes genéticas identificadas, se recomienda seleccionar la opción "Cantidad de lecturas mínima" en el apartado "7. Llamada de variantes".
+
+De esta forma, la ejecución del flujo de trabajo completo será de aproximadamente 10min.
