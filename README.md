@@ -8,7 +8,7 @@ Si encontrase algún problema para ejecutarlo, repórtelo, por favor.
 ## Intrucciones para ejecutar GenAgans
 1. Abrir la terminal de Linux.
 
-2. Instalar el ambiente de conda del archivo "GenAgans.yml". Este paso solo es necesario la primera vez que se vaya a ejecutar.
+2. Instalar el ambiente de conda del archivo "GenAgans.yml" con "conda env create -f GenAgans.yml". Este paso solo es necesario la primera vez que se vaya a ejecutar.
 
 3. Activar el ambiente de conda "GenAgans" con "conda activate GenAgans".
 
