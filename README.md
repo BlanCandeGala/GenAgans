@@ -1,5 +1,5 @@
 # GenAgans
-GenAgans es una aplicación que le permitirá realizar el flujo de trabajo de análisis de variantes genéticas en humanos a partir de lecturas pareadas de forma interactiva, intuitiva y personalizada.
+GenAgans es una aplicación que le permitirá realizar todo el flujo de trabajo de identificación y anotación de variantes genéticas humanas a partir de lecturas pareadas provenientes de NGS de forma interactiva, intuitiva, personalizada y reproducible.
 
 GenAgans ha sido probado en Ubuntu-22.04 y Conda 23.9.0.
 
@@ -8,7 +8,7 @@ Para su correcto funcionamiento requiere que los directorios y archivos "comando
 Si encontrase algún problema al ejecutarlo, repórtelo, por favor.
 
 ---
-GenAgans is an application that allows you to perform the genetic variant analysis workflow from paired-end reads in an interactive, intuitive, and customizable way.
+GenAgans is an application that will allow you to perform the entire workflow of identification and annotation of human genetic variants from paired readings coming from NGS in an interactive, intuitive, personalized and reproducible way.
 
 GenAgans has been tested on Ubuntu-22.04 and Conda 23.9.0.
 
